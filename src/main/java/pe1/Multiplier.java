@@ -19,11 +19,12 @@ public class Multiplier {
         System.out.println(setOfValues);
     }
     
-    public void sumOfValues() {
+    public Integer sumOfValues() {
         sum = setOfValues.stream()
                         .mapToInt(Integer::intValue)
                         .sum();
         System.out.println("Sum of list values "+ sum);
+        return sum;
     }
 
 }
